@@ -1,0 +1,50 @@
+.navbar-nav {
+  --bs-nav-link-color: white !important;
+}
+
+html {
+  color: white !important;
+}
+
+body {
+  font-family: sans-serif !important;
+}
+
+input:focus,
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: inherit !important;
+}
+
+.dt-paging-button {
+  font-weight: bold !important;
+}
+
+.dt-paging-button.current {
+  background-color: #373d43 !important;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.enfp {
+  height: 450px;
+  max-width: 90vw;
+  display: block;
+}

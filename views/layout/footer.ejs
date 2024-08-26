@@ -1,0 +1,23 @@
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/script.js"></script>
+
+<script type="module">
+  let imgLink = $("a.img-gallery");
+
+  $("a.img-gallery > img").each((n, el) => {
+    imgLink[n].setAttribute("data-pswp-height", el.naturalHeight);
+    imgLink[n].setAttribute("data-pswp-width", el.naturalWidth);
+  })
+
+  import PhotoSwipeLightbox from "/js/photoswipe-lightbox.esm.js"; const lightbox = new PhotoSwipeLightbox({
+    gallery: "tbody",
+    children: "a.img-gallery",
+    showHideAnimationType: "zoom",
+    pswpModule: () => import("/js/photoswipe.esm.js"),
+  });
+  lightbox.init();
+</script>
+
+</body>
+
+</html>
