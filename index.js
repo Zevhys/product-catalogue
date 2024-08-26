@@ -46,14 +46,11 @@ const staticFiles = {
   "/css": [
     "node_modules/bootstrap/dist/css", //
     "node_modules/@fortawesome/fontawesome-free/css",
-    "node_modules/datatables.net-bs5/css",
     "style",
   ],
 
   "/js": [
     "node_modules/bootstrap/dist/js", //
-    "node_modules/datatables.net/js",
-    "node_modules/datatables.net-bs5/js",
     "node_modules/jquery/dist",
     "node_modules/photoswipe/dist",
     "script",
