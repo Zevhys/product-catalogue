@@ -17,12 +17,40 @@ select:focus {
   border-color: inherit !important;
 }
 
+.dt-length {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 1em;
+}
+
+.dt-search {
+  display: flex;
+  flex-direction: column;
+}
+#dt-search-0 {
+  margin-left: 0 !important;
+}
+
+div.row:nth-child(3) > div:nth-child(1) {
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
 .dt-paging-button {
   font-weight: bold !important;
 }
 
 .dt-paging-button.current {
   background-color: #373d43 !important;
+}
+
+.fixedHeader-floating {
+  margin-top: 0 !important;
 }
 
 input[type="number"] {
@@ -47,4 +75,10 @@ input[type="number"]::-webkit-outer-spin-button {
   height: 450px;
   max-width: 90vw;
   display: block;
+}
+
+@media (min-width: 768px) {
+  .dt-length {
+    margin-bottom: 0;
+  }
 }
