@@ -3,6 +3,3 @@ node_modules/
 
 # Ignore environment variable files
 .env
-
-# Ignore robots.txt file
-robots.txt
