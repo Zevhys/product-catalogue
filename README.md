@@ -1,6 +1,6 @@
 # product-catalogue
  
-A simple stock management system built with Node.js, Express.js, and MongoDB. This application allows users to perform CRUD operations (Create, Read, Update, Delete) for managing product information including name, stock, price, and image. The app also includes a bit input validation.
+A simple stock management system built with Node.js, Express.js, and MongoDB. This application allows users to perform CRUD operations for managing product information including name, stock, price, and image. The app also includes a bit input validation.
 
 # Installation
 ```bash
