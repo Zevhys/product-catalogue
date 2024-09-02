@@ -11,7 +11,8 @@ body {
 }
 
 input:focus,
-select:focus {
+select:focus,
+.page-link {
   outline: none !important;
   box-shadow: none !important;
   border-color: inherit !important;
