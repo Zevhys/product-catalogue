@@ -3,11 +3,12 @@ const tableAlign = "dt-head-center dt-body-center";
 $(document).ready(function () {
   $("table").DataTable({
     rowReorder: true,
+    responsive: true,
     columnDefs: [
-      { orderable: true, className: `${tableAlign} reorder`, targets: 0 },
+      { orderable: false, className: `${tableAlign}`, targets: 0 },
+      { orderable: true, className: `${tableAlign} reorder`, targets: 1 },
       { orderable: true, className: `${tableAlign} reorder`, targets: 2 },
       { orderable: true, className: `${tableAlign} reorder`, targets: 3 },
-      { orderable: true, className: `${tableAlign} reorder`, targets: 4 },
       { orderable: false, className: tableAlign, targets: "_all" },
     ],
   });
