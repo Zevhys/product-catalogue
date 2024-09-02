@@ -11,6 +11,9 @@ npm install
 - mongod
 - mongosh
 
+# Environment Variables 
+connects to a MongoDB Compass database named `crud` hosted locally.
+
 # Run the application
 node index.js
 Visit http://localhost:7000 
