@@ -5,7 +5,6 @@ $(document).ready(function () {
     rowReorder: true,
     responsive: true,
     columnDefs: [
-      { orderable: false, className: `${tableAlign}`, targets: 0 },
       { orderable: true, className: `${tableAlign} reorder`, targets: 1 },
       { orderable: true, className: `${tableAlign} reorder`, targets: 2 },
       { orderable: true, className: `${tableAlign} reorder`, targets: 3 },
