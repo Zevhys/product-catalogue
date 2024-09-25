@@ -14,8 +14,8 @@
               <div class="mb-3">
                 <label for="name">Name</label>
                 <input type="text" name="name" class="form-control form-control-lg" placeholder="Enter Name" required
-                  minlength="5" maxlength="30" id="name" autocomplete="off" spellcheck="false"
-                  value="<%= products.name %>">
+                  minlength="5" maxlength="30" id="name" autocomplete="off" spellcheck="false" pattern=".*\S.*"
+                  title="Please enter at least one non-space character" value="<%= products.name %>">
               </div>
               <div class="mb-3">
                 <label for="stock">Stock</label>
