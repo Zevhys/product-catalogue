@@ -1,11 +1,12 @@
-# product-catalogue
-
-[![CodeQL](https://github.com/Zevhys/product-catalogue/actions/workflows/codeql.yml/badge.svg)](https://github.com/Zevhys/product-catalogue/actions/workflows/codeql.yml)
-[![CodeQL](https://github.com/Zevhys/product-catalogue/actions/workflows/eslint.yml/badge.svg)](https://github.com/Zevhys/product-catalogue/actions/workflows/eslint.yml)
+# product-catalogue [![CodeQL](https://github.com/Zevhys/product-catalogue/actions/workflows/codeql.yml/badge.svg)](https://github.com/Zevhys/product-catalogue/actions/workflows/codeql.yml) [![CodeQL](https://github.com/Zevhys/product-catalogue/actions/workflows/eslint.yml/badge.svg)](https://github.com/Zevhys/product-catalogue/actions/workflows/eslint.yml)
  
 A simple stock management system built with Node.js, Express.js, and MongoDB. This application allows users to perform CRUD operations for managing product information including name, stock, price, and image. The app also includes a bit input validation.
 
-# Technologies
+<div align="center">
+  <img src="preview.png" height="350px">
+</div>
+
+# Tech Stack 
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=ffffff)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=ffffff)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=ffffff)
