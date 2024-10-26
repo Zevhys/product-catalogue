@@ -1,4 +1,7 @@
 # product-catalogue
+
+[![CodeQL](https://github.com/Zevhys/product-catalogue/actions/workflows/codeql.yml/badge.svg)](https://github.com/Zevhys/product-catalogue/actions/workflows/codeql.yml)
+[![CodeQL](https://github.com/Zevhys/product-catalogue/actions/workflows/eslint.yml/badge.svg)](https://github.com/Zevhys/product-catalogue/actions/workflows/eslint.yml)
  
 A simple stock management system built with Node.js, Express.js, and MongoDB. This application allows users to perform CRUD operations for managing product information including name, stock, price, and image. The app also includes a bit input validation.
 
