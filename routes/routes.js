@@ -68,6 +68,7 @@ router.get("/update/:id", async (req, res) => {
       });
     }
   } catch (err) {
+    console.log(err);
     res.redirect("/home");
   }
 });
