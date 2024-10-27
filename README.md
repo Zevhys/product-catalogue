@@ -3,7 +3,7 @@
 A simple stock management system built with Node.js, Express.js, and MongoDB. This application allows users to perform CRUD operations for managing product information including name, stock, price, and image. The app also includes a bit input validation.
 
 <div align="center">
-  <img src="preview.png" height="350px">
+  <img src="preview.webp" height="350px">
 </div>
 
 # Tech Stack 
