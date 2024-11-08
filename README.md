@@ -1,4 +1,6 @@
-# product-catalogue [![CodeQL](https://github.com/Zevhys/product-catalogue/actions/workflows/codeql.yml/badge.svg)](https://github.com/Zevhys/product-catalogue/actions/workflows/codeql.yml) [![CodeQL](https://github.com/Zevhys/product-catalogue/actions/workflows/eslint.yml/badge.svg)](https://github.com/Zevhys/product-catalogue/actions/workflows/eslint.yml)
+# product-catalogue 
+[![Author](http://img.shields.io/badge/author-@Zevhys-blue.svg)](https://www.linkedin.com/in/rakha-djauhari/) [![GitHub license](https://img.shields.io/github/license/Zevhys/product-catalogue)](https://github.com/Zevhys/product-catalogue/blob/main/LICENSE) ![GitHub repo size](https://img.shields.io/github/repo-size/Zevhys/product-catalogue)
+[![CodeQL](https://github.com/Zevhys/product-catalogue/actions/workflows/codeql.yml/badge.svg)](https://github.com/Zevhys/product-catalogue/actions/workflows/codeql.yml) [![CodeQL](https://github.com/Zevhys/product-catalogue/actions/workflows/eslint.yml/badge.svg)](https://github.com/Zevhys/product-catalogue/actions/workflows/eslint.yml)
  
 A simple stock management system built with Node.js, Express.js, and MongoDB. This application allows users to perform CRUD operations for managing product information including name, stock, price, and image. The app also includes a bit input validation.
 
@@ -17,10 +19,13 @@ A simple stock management system built with Node.js, Express.js, and MongoDB. Th
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=ffffff)
 ![FontAwesome](https://img.shields.io/badge/Font%20Awesome-339AF0?style=flat-square&logo=fontawesome&logoColor=ffffff)
 
-# Installation
+# Requirements
 ```bash
-# Install dependencies
+# Install Dependencies
 npm install
+
+# Clone Repository
+git clone https://github.com/Zevhys/product-catalogue .
 
 # Start MongoDB
 - mongod
@@ -29,7 +34,7 @@ npm install
 # Environment Variables 
 connects to a MongoDB Compass database named `crud` hosted locally.
 
-# Run the application
-node index.js
-Visit http://localhost:7000 
+# Run The Application
+- node index.js
+- Visit http://localhost:7000 
 ```
