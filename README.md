@@ -21,11 +21,11 @@ A simple stock management system built with Node.js, Express.js, and MongoDB. Th
 
 # Requirements
 ```bash
-# Install Dependencies
-npm install
-
 # Clone Repository
 git clone https://github.com/Zevhys/product-catalogue .
+
+# Install Dependencies
+npm install
 
 # Start MongoDB
 - mongod
