@@ -1,12 +1,29 @@
 {
   "name": "product-catalogue",
   "version": "1.0.0",
+  "description": "simple stock management system",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
+  "keywords": [
+    "html",
+    "css",
+    "bootstrap",
+    "javascript",
+    "node.js",
+    "express.js",
+    "ejs",
+    "mongo db",
+    "front-end",
+    "back-end"
+  ],
   "author": "Zevhys",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zevhys/product-catalogue"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
     "bootstrap": "^5.3.3",
