@@ -37,4 +37,7 @@ connects to a MongoDB Compass database named `crud` hosted locally.
 # Run The Application
 - node index.js
 - Visit http://localhost:7000 
+
+# Running ESLint
+- npx eslint .
 ```
