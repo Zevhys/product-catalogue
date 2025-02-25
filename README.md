@@ -20,7 +20,7 @@ A simple stock management system built with Node.js, Express.js, and MongoDB. Th
 ![FontAwesome](https://img.shields.io/badge/Font%20Awesome-339AF0?style=flat-square&logo=fontawesome&logoColor=ffffff)
 
 # Requirements
-```bash
+<pre>
 # Clone Repository
 git clone https://github.com/Zevhys/product-catalogue .
 
@@ -40,4 +40,4 @@ connects to a MongoDB Compass database named `crud` hosted locally.
 
 # Running ESLint
 - npx eslint .
-```
+</pre>
