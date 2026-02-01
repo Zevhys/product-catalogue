@@ -55,16 +55,18 @@ For optimal product image quality and performance in the catalogue:
 ## Certification Images (for Works Page)
 For certification images with varying dimensions and WebP conversion:
 
+- **🎯 [Specific Dimensions](CERTIFICATION_SPECIFIC_DIMENSIONS.md)** - **Exact sizes for Cert-1 to Cert-4**
 - **📖 [Certification Guide (Indonesian)](CERTIFICATION_IMAGE_SIZING_GUIDE.md)** - Panduan sertifikasi lengkap
 - **📖 [Certification Guide (English)](CERTIFICATION_IMAGE_SIZING_GUIDE_EN.md)** - Complete certification guide
 - **⚡ [Quick Reference](CERTIFICATION_SIZING_QUICK_REF.md)** - Quick reference with formulas
 - **📋 [Calculator Worksheet](CERTIFICATION_CALCULATOR_WORKSHEET.txt)** - Fill-in worksheet template
 
 **TL;DR:** 
-- **Landscape:** Max width 1200px (height auto-calculated)
-- **Portrait:** Max height 1400px (width auto-calculated)
-- **Square:** 1200 × 1200 px
-- **WebP Quality:** 80-85 for optimal balance (use ezgif.com)
+- **Cert-1 (FreeCodeCamp):** 1200 × 900 px
+- **Cert-2 (Google Cloud):** 1200 × 675 px
+- **Cert-3 (AWS Badge):** 1200 × 1200 px
+- **Cert-4 (Coursera):** 1200 × 849 px
+- **WebP Quality:** 80-88 depending on content type (use ezgif.com)
 
 # Contribution
 Contributions are welcome! If you have suggestions for improvements or want to report an issue, feel free to open a pull request or create an issue. Thank you for helping to make this project better!
