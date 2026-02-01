@@ -41,14 +41,30 @@ connects to a MongoDB Compass database named `crud` hosted locally.
 - npx eslint .
 </pre>
 
-# Image Sizing Guide
-For optimal image quality and performance, please refer to our comprehensive image sizing documentation:
+# Image Sizing Guides
+
+## Product Images
+For optimal product image quality and performance in the catalogue:
 
 - **📖 [Complete Guide (Indonesian)](IMAGE_SIZING_GUIDE.md)** - Panduan lengkap dalam Bahasa Indonesia
 - **📖 [Complete Guide (English)](IMAGE_SIZING_GUIDE_EN.md)** - Complete guide in English  
 - **⚡ [Quick Reference](IMAGE_SIZING_QUICK_REF.md)** - Quick reference card (bilingual)
 
 **TL;DR:** Upload product images at **1400 × 1400 px** (square, JPEG 80% quality, < 1MB) for best results.
+
+## Certification Images (for Works Page)
+For certification images with varying dimensions and WebP conversion:
+
+- **📖 [Certification Guide (Indonesian)](CERTIFICATION_IMAGE_SIZING_GUIDE.md)** - Panduan sertifikasi lengkap
+- **📖 [Certification Guide (English)](CERTIFICATION_IMAGE_SIZING_GUIDE_EN.md)** - Complete certification guide
+- **⚡ [Quick Reference](CERTIFICATION_SIZING_QUICK_REF.md)** - Quick reference with formulas
+- **📋 [Calculator Worksheet](CERTIFICATION_CALCULATOR_WORKSHEET.txt)** - Fill-in worksheet template
+
+**TL;DR:** 
+- **Landscape:** Max width 1200px (height auto-calculated)
+- **Portrait:** Max height 1400px (width auto-calculated)
+- **Square:** 1200 × 1200 px
+- **WebP Quality:** 80-85 for optimal balance (use ezgif.com)
 
 # Contribution
 Contributions are welcome! If you have suggestions for improvements or want to report an issue, feel free to open a pull request or create an issue. Thank you for helping to make this project better!
