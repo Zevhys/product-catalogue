@@ -1,0 +1,210 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║              CERTIFICATION IMAGE DIMENSIONS - FINAL SUMMARY                  ║
+║              DIMENSI GAMBAR SERTIFIKASI - RINGKASAN AKHIR                    ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                                                              │
+│  📋 CERTIFICATION-1: FreeCodeCamp Responsive Web Design                     │
+│  ════════════════════════════════════════════════════════════════════════   │
+│                                                                              │
+│      Width:  1200 px                                                         │
+│      Height: 900 px                                                          │
+│                                                                              │
+│      Original Size:    1200 × 900                                           │
+│      Aspect Ratio:     4:3 (1.333)                                          │
+│      Orientation:      Landscape                                            │
+│      WebP Quality:     85 (text-heavy certificate)                          │
+│      File Size:        ~350 KB → ~120 KB (65% reduction)                    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                                                              │
+│  📋 CERTIFICATION-2: Google Cloud Professional Certificate                  │
+│  ════════════════════════════════════════════════════════════════════════   │
+│                                                                              │
+│      Width:  1200 px                                                         │
+│      Height: 675 px                                                          │
+│                                                                              │
+│      Original Size:    1920 × 1080                                          │
+│      Aspect Ratio:     16:9 (1.778)                                         │
+│      Orientation:      Landscape                                            │
+│      WebP Quality:     82 (graphics + logo)                                 │
+│      File Size:        ~400 KB → ~110 KB (72% reduction)                    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                                                              │
+│  📋 CERTIFICATION-3: AWS Solutions Architect Badge                          │
+│  ════════════════════════════════════════════════════════════════════════   │
+│                                                                              │
+│      Width:  1200 px                                                         │
+│      Height: 1200 px                                                         │
+│                                                                              │
+│      Original Size:    1000 × 1000                                          │
+│      Aspect Ratio:     1:1 (1.000)                                          │
+│      Orientation:      Square                                               │
+│      WebP Quality:     85 (logo badge)                                      │
+│      File Size:        ~250 KB → ~85 KB (66% reduction)                     │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                                                              │
+│  📋 CERTIFICATION-4: Coursera Machine Learning Certificate                  │
+│  ════════════════════════════════════════════════════════════════════════   │
+│                                                                              │
+│      Width:  1200 px                                                         │
+│      Height: 849 px                                                          │
+│                                                                              │
+│      Original Size:    2000 × 1414                                          │
+│      Aspect Ratio:     √2:1 (1.414) - A4 Landscape                         │
+│      Orientation:      Landscape                                            │
+│      WebP Quality:     88 (text-heavy with graphics)                        │
+│      File Size:        ~480 KB → ~165 KB (66% reduction)                    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                          QUICK REFERENCE TABLE                               ║
+║                          TABEL REFERENSI CEPAT                               ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│ Cert  │ Name            │ Width  │ Height │ Ratio  │ WebP Q │ Reduction │
+├───────────────────────────────────────────────────────────────────────────┤
+│ #1    │ FreeCodeCamp    │ 1200px │ 900px  │ 4:3    │ 85     │ 65%       │
+│ #2    │ Google Cloud    │ 1200px │ 675px  │ 16:9   │ 82     │ 72%       │
+│ #3    │ AWS Badge       │ 1200px │ 1200px │ 1:1    │ 85     │ 66%       │
+│ #4    │ Coursera ML     │ 1200px │ 849px  │ √2:1   │ 88     │ 66%       │
+├───────────────────────────────────────────────────────────────────────────┤
+│ TOTAL │ All 4 Certs     │        │        │        │ Avg 85 │ Avg 68%   │
+└───────────────────────────────────────────────────────────────────────────┘
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                       HTML IMPLEMENTATION EXAMPLE                            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+<!-- Certification-1: FreeCodeCamp -->
+<img src="cert-freecodecamp.webp" 
+     alt="FreeCodeCamp Responsive Web Design"
+     width="1200" 
+     height="900" 
+     loading="lazy">
+
+<!-- Certification-2: Google Cloud -->
+<img src="cert-google-cloud.webp" 
+     alt="Google Cloud Professional Certificate"
+     width="1200" 
+     height="675" 
+     loading="lazy">
+
+<!-- Certification-3: AWS Badge -->
+<img src="cert-aws-badge.webp" 
+     alt="AWS Solutions Architect Badge"
+     width="1200" 
+     height="1200" 
+     loading="lazy">
+
+<!-- Certification-4: Coursera -->
+<img src="cert-coursera-ml.webp" 
+     alt="Coursera Machine Learning Certificate"
+     width="1200" 
+     height="849" 
+     loading="lazy">
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                       PROCESSING COMMANDS                                    ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+# Cert-1: FreeCodeCamp (1200 × 900)
+magick cert1.png -resize 1200x900 temp.png
+cwebp -q 85 temp.png -o cert-freecodecamp.webp
+
+# Cert-2: Google Cloud (1200 × 675)
+magick cert2.png -resize 1200x675 temp.png
+cwebp -q 82 temp.png -o cert-google-cloud.webp
+
+# Cert-3: AWS Badge (1200 × 1200)
+magick cert3.png -resize 1200x1200 temp.png
+cwebp -q 85 temp.png -o cert-aws-badge.webp
+
+# Cert-4: Coursera (1200 × 849)
+magick cert4.png -resize 1200x849 temp.png
+cwebp -q 88 temp.png -o cert-coursera-ml.webp
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                       USING EZGIF.COM                                        ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+For each certification:
+
+1. Visit: https://ezgif.com/resize
+   - Upload original PNG
+   - Set new dimensions (see table above)
+   - Resize
+
+2. Visit: https://ezgif.com/png-to-webp
+   - Upload resized PNG
+   - Set Quality (see table above)
+   - Convert to WebP
+   - Download
+
+Example for Cert-1:
+  Step 1: Resize to 1200 × 900
+  Step 2: Convert with quality 85
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                       KEY PRINCIPLES                                         ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+✓ All certifications use MAX WIDTH = 1200px for consistency
+✓ Heights calculated to preserve original aspect ratios
+✓ WebP format for optimal file size (68% average reduction)
+✓ Quality factors adjusted per content type (80-88)
+✓ No distortion - aspect ratios maintained
+✓ Optimized for web display and performance
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                       DOCUMENTATION                                          ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Complete documentation available in:
+
+📖 CERTIFICATION_SPECIFIC_DIMENSIONS.md
+   → Full details for all 4 certifications
+   → HTML/CSS examples
+   → Visual diagrams
+   → File size estimates
+
+📖 CERTIFICATION_IMAGE_SIZING_GUIDE.md
+   → Complete methodology
+   → Formulas and calculations
+   → Additional examples
+
+📖 README.md
+   → Quick reference
+   → Links to all documentation
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Created: 2026-02-01
+Version: 1.0
+Repository: https://github.com/Zevhys/product-catalogue
+
+═══════════════════════════════════════════════════════════════════════════════
