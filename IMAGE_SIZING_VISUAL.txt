@@ -1,0 +1,205 @@
+# Visual Summary: Image Sizing Requirements
+# Ringkasan Visual: Kebutuhan Ukuran Gambar
+
+```
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                   PRODUCT CATALOGUE IMAGE SPECIFICATIONS                     ║
+║               SPESIFIKASI GAMBAR KATALOG PRODUK                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                                                              │
+│  📸 CURRENT IMPLEMENTATION / IMPLEMENTASI SAAT INI                          │
+│                                                                              │
+│  ┌─────────────┬──────────────────────────────────────────────────────┐    │
+│  │ Location    │ views/home.ejs (line 31)                             │    │
+│  │ Lokasi      │ views/home.ejs (baris 31)                            │    │
+│  ├─────────────┼──────────────────────────────────────────────────────┤    │
+│  │ Code        │ <img src="..." width="50" class="img-thumbnail">    │    │
+│  │ Kode        │                                                      │    │
+│  ├─────────────┼──────────────────────────────────────────────────────┤    │
+│  │ Display     │ 50px × 50px (+ padding & border)                     │    │
+│  │ Tampilan    │                                                      │    │
+│  ├─────────────┼──────────────────────────────────────────────────────┤    │
+│  │ Gallery     │ PhotoSwipe lightbox (natural dimensions)            │    │
+│  │ Galeri      │ PhotoSwipe lightbox (dimensi natural)               │    │
+│  ├─────────────┼──────────────────────────────────────────────────────┤    │
+│  │ Limit       │ 1MB maximum file size (script.js line 55)           │    │
+│  │ Batas       │ Maksimal 1MB ukuran file (script.js baris 55)       │    │
+│  └─────────────┴──────────────────────────────────────────────────────┘    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                                                              │
+│  ✅ RECOMMENDED SOLUTION / SOLUSI YANG DIREKOMENDASIKAN                     │
+│                                                                              │
+│                                                                              │
+│     ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓       │
+│     ┃                                                               ┃       │
+│     ┃          UPLOAD 1 IMAGE / UPLOAD 1 GAMBAR                    ┃       │
+│     ┃                                                               ┃       │
+│     ┃          📦  1400 × 1400 pixels                              ┃       │
+│     ┃          🎨  JPEG format                                     ┃       │
+│     ┃          ⚙️   75-80% quality / kualitas                      ┃       │
+│     ┃          📊  300-500 KB file size / ukuran file             ┃       │
+│     ┃          📐  1:1 aspect ratio / rasio aspek                 ┃       │
+│     ┃                                                               ┃       │
+│     ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛       │
+│                                                                              │
+│                                   │                                          │
+│                                   │ Automatically scales to                 │
+│                                   │ Otomatis di-scale ke                    │
+│                                   ▼                                          │
+│                                                                              │
+│     ┌──────────────────────┐              ┌─────────────────────┐          │
+│     │  THUMBNAIL VIEW      │              │  FULL-SIZE VIEW     │          │
+│     │  TAMPILAN THUMBNAIL  │              │  TAMPILAN PENUH     │          │
+│     ├──────────────────────┤              ├─────────────────────┤          │
+│     │                      │              │                     │          │
+│     │   🖼️  50px × 50px    │              │  🖼️  1400px max     │          │
+│     │                      │              │                     │          │
+│     │   (scaled by         │              │  (PhotoSwipe        │          │
+│     │    browser)          │              │   lightbox)         │          │
+│     │                      │              │                     │          │
+│     │   In table           │              │  Modal overlay      │          │
+│     │   Di tabel           │              │  Modal overlay      │          │
+│     │                      │              │                     │          │
+│     └──────────────────────┘              └─────────────────────┘          │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                                                              │
+│  🎯 WHY THESE NUMBERS? / MENGAPA ANGKA INI?                                 │
+│                                                                              │
+│  ┌────────────────────────────────────────────────────────────────────┐    │
+│  │  1. Thumbnail Calculation / Perhitungan Thumbnail                  │    │
+│  │     ────────────────────────────────────────────────────────       │    │
+│  │     Display width:          50px                                   │    │
+│  │     Bootstrap padding:    + 8px (4px × 2)                          │    │
+│  │     Bootstrap border:     + 2px (1px × 2)                          │    │
+│  │                           ─────                                     │    │
+│  │     Container width:       60px                                    │    │
+│  │                                                                     │    │
+│  │     For Retina displays / Untuk layar Retina:                     │    │
+│  │     → 50px × 3 = 150px (sharp quality / kualitas tajam)           │    │
+│  │                                                                     │    │
+│  ├────────────────────────────────────────────────────────────────────┤    │
+│  │  2. Full-size Calculation / Perhitungan Full-size                 │    │
+│  │     ───────────────────────────────────────────────────────        │    │
+│  │     Desktop viewport:      1920px (Full HD)                        │    │
+│  │     PhotoSwipe max:      × 90% (0.9)                               │    │
+│  │                           ──────                                    │    │
+│  │     Effective display:     1728px                                  │    │
+│  │                                                                     │    │
+│  │     Recommended:          1400px (optimal for most screens)        │    │
+│  │     Direkomendasikan:     1400px (optimal untuk kebanyakan layar) │    │
+│  │                                                                     │    │
+│  ├────────────────────────────────────────────────────────────────────┤    │
+│  │  3. File Size Calculation / Perhitungan Ukuran File               │    │
+│  │     ────────────────────────────────────────────────────           │    │
+│  │     1400 × 1400 pixels @ JPEG 75-80% quality                       │    │
+│  │     = 300-500 KB                                                   │    │
+│  │                                                                     │    │
+│  │     ✅ Well under 1MB limit / Jauh di bawah batas 1MB              │    │
+│  │     ✅ Good quality / Kualitas bagus                               │    │
+│  │     ✅ Fast loading / Loading cepat                                │    │
+│  │                                                                     │    │
+│  └────────────────────────────────────────────────────────────────────┘    │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                                                              │
+│  📱 RESPONSIVE BEHAVIOR / PERILAKU RESPONSIF                                │
+│                                                                              │
+│  Desktop (≥ 1920px)     Laptop (≥ 1366px)     Tablet (≥ 768px)             │
+│  ┌────────────────┐     ┌────────────────┐     ┌────────────────┐          │
+│  │                │     │                │     │                │          │
+│  │  Table: Full   │     │  Table: Full   │     │  Table: Full   │          │
+│  │  Thumb: 50px   │     │  Thumb: 50px   │     │  Thumb: 50px   │          │
+│  │  Modal: 1400px │     │  Modal: 1366px │     │  Modal: 768px  │          │
+│  │                │     │                │     │                │          │
+│  └────────────────┘     └────────────────┘     └────────────────┘          │
+│                                                                              │
+│  Mobile (< 576px)                                                           │
+│  ┌────────────────┐                                                         │
+│  │◄──────────────►│ (Horizontal scroll / Scroll horizontal)                │
+│  │  Table: Scroll │                                                         │
+│  │  Thumb: 50px   │                                                         │
+│  │  Modal: 375px  │                                                         │
+│  │                │                                                         │
+│  └────────────────┘                                                         │
+│                                                                              │
+│  ✓ Same 50px thumbnail across all devices                                  │
+│    Thumbnail 50px yang sama di semua device                                │
+│  ✓ PhotoSwipe scales down for smaller screens                              │
+│    PhotoSwipe scale down untuk layar lebih kecil                           │
+│  ✓ 1400px source ensures quality everywhere                                │
+│    Source 1400px memastikan kualitas di mana-mana                          │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                                                              │
+│  ⚙️  QUICK RESIZE COMMANDS / PERINTAH RESIZE CEPAT                          │
+│                                                                              │
+│  Using ImageMagick / Menggunakan ImageMagick:                               │
+│  ┌──────────────────────────────────────────────────────────────────┐      │
+│  │  $ magick input.jpg -resize 1400x1400^ -gravity center \         │      │
+│  │      -extent 1400x1400 -quality 80 output.jpg                    │      │
+│  └──────────────────────────────────────────────────────────────────┘      │
+│                                                                              │
+│  Using Python (Pillow) / Menggunakan Python (Pillow):                       │
+│  ┌──────────────────────────────────────────────────────────────────┐      │
+│  │  from PIL import Image                                            │      │
+│  │  img = Image.open('input.jpg')                                   │      │
+│  │  img = img.resize((1400, 1400), Image.LANCZOS)                   │      │
+│  │  img.save('output.jpg', 'JPEG', quality=80)                      │      │
+│  └──────────────────────────────────────────────────────────────────┘      │
+│                                                                              │
+│  Online Tools / Tools Online:                                               │
+│  • https://squoosh.app/        (Resize + compress)                          │
+│  • https://tinypng.com/        (Compress only)                              │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                                                                              │
+│  ✅ FINAL CHECKLIST / CHECKLIST AKHIR                                       │
+│                                                                              │
+│  Before uploading images / Sebelum upload gambar:                           │
+│                                                                              │
+│  ☐  Dimensions:     1400 × 1400 px                                          │
+│  ☐  Aspect ratio:   1:1 (square / persegi)                                 │
+│  ☐  Format:         .jpg or .jpeg                                           │
+│  ☐  Quality:        75-80% (JPEG compression)                               │
+│  ☐  File size:      < 1 MB (< 1,000,000 bytes)                             │
+│  ☐  Color mode:     RGB (not CMYK)                                          │
+│  ☐  Resolution:     72 PPI (for web)                                        │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║  📚 FULL DOCUMENTATION / DOKUMENTASI LENGKAP                                ║
+║                                                                              ║
+║  • IMAGE_SIZING_GUIDE.md       (Indonesian / Bahasa Indonesia)              ║
+║  • IMAGE_SIZING_GUIDE_EN.md    (English / Bahasa Inggris)                   ║
+║  • IMAGE_SIZING_QUICK_REF.md   (Quick reference / Referensi cepat)          ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+```
+
+---
+
+**Created:** 2026-01-31  
+**Version:** 1.0  
+**Repository:** https://github.com/Zevhys/product-catalogue
